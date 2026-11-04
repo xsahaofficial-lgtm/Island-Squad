@@ -1,0 +1,82 @@
+{
+  "$schema": "https://developers.reddit.com/schema/products.json",
+  "products": [
+    {
+      "sku": "pu_shield",
+      "displayName": "Shield (+1 use)",
+      "description": "One extra use of the Shield power-up in Island Squad.",
+      "price": 25,
+      "accountingType": "CONSUMABLE"
+    },
+    {
+      "sku": "pu_repair",
+      "displayName": "Repair (+1 use)",
+      "description": "One extra use of the Repair power-up in Island Squad.",
+      "price": 25,
+      "accountingType": "CONSUMABLE"
+    },
+    {
+      "sku": "pu_airstrike",
+      "displayName": "Airstrike (+1 use)",
+      "description": "One extra use of the Airstrike power-up in Island Squad.",
+      "price": 25,
+      "accountingType": "CONSUMABLE"
+    },
+    {
+      "sku": "pu_frigate",
+      "displayName": "Frigate (+1 use)",
+      "description": "One extra use of the Frigate power-up in Island Squad.",
+      "price": 25,
+      "accountingType": "CONSUMABLE"
+    },
+    {
+      "sku": "pu_doubler",
+      "displayName": "2X Gold (+1 use)",
+      "description": "One extra use of the 2X Gold power-up in Island Squad.",
+      "price": 25,
+      "accountingType": "CONSUMABLE"
+    },
+    {
+      "sku": "pu_revive",
+      "displayName": "Continue (+1 use)",
+      "description": "One continue after the castle falls in Island Squad.",
+      "price": 50,
+      "accountingType": "CONSUMABLE"
+    },
+    {
+      "sku": "coins_200",
+      "displayName": "200 coins",
+      "description": "200 in-game coins for Island Squad.",
+      "price": 25,
+      "accountingType": "CONSUMABLE"
+    },
+    {
+      "sku": "fill_5",
+      "displayName": "80 coins (top-up)",
+      "description": "80 in-game coins at the top-up rate, used to cover coins you are missing for a purchase.",
+      "price": 5,
+      "accountingType": "CONSUMABLE"
+    },
+    {
+      "sku": "fill_25",
+      "displayName": "400 coins (top-up)",
+      "description": "400 in-game coins at the top-up rate, used to cover coins you are missing for a purchase.",
+      "price": 25,
+      "accountingType": "CONSUMABLE"
+    },
+    {
+      "sku": "fill_50",
+      "displayName": "800 coins (top-up)",
+      "description": "800 in-game coins at the top-up rate, used to cover coins you are missing for a purchase.",
+      "price": 50,
+      "accountingType": "CONSUMABLE"
+    },
+    {
+      "sku": "fill_100",
+      "displayName": "1600 coins (top-up)",
+      "description": "1600 in-game coins at the top-up rate, used to cover coins you are missing for a purchase.",
+      "price": 100,
+      "accountingType": "CONSUMABLE"
+    }
+  ]
+}

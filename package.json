@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "name": "island-squad",
+  "version": "0.0.0",
+  "description": "Island Squad - a naval tower-defense game for Reddit (Devvit Web + Phaser)",
+  "license": "BSD-3-Clause",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "deploy": "npm run test:types && npm run lint && npm run test:unit && devvit upload",
+    "dev": "devvit playtest",
+    "launch": "npm run deploy && devvit publish",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "login": "devvit login",
+    "prettier": "prettier --write .",
+    "test:types": "tsc --build",
+    "type-check": "tsc --build && eslint \"src/**/*.{ts,tsx}\"",
+    "test:unit": "node --experimental-strip-types --no-warnings=ExperimentalWarning --test \"src/**/*.test.ts\"",
+    "rename": "node scripts/rename.mjs",
+    "sync:products": "node --experimental-strip-types --no-warnings=ExperimentalWarning scripts/sync-products.mjs"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "dependencies": {
+    "@devvit/payments": "0.15.0",
+    "@devvit/start": "0.15.0",
+    "@devvit/web": "0.15.0",
+    "@fontsource/space-grotesk": "^5.2.10",
+    "@hono/node-server": "2.1.3",
+    "devvit": "0.15.0",
+    "hono": "4.13.13",
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "^24.13.3",
+    "eslint": "10.12.0",
+    "globals": "17.13.0",
+    "prettier": "3.9.9",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.1",
+    "vite": "8.3.2"
+  }
+}

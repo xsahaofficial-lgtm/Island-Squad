@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
+  "name": "island-squad",
+  "marketingAssets": {
+    "icon": "marketing/icon.png"
+  },
+  "permissions": {
+    "redis": true,
+    "reddit": true
+  },
+  "post": {
+    "dir": "dist/client",
+    "entrypoints": {
+      "default": {
+        "inline": true,
+        "entry": "splash.html"
+      },
+      "game": {
+        "entry": "game.html"
+      }
+    }
+  },
+  "server": {
+    "dir": "dist/server",
+    "entry": "index.cjs"
+  },
+  "menu": {
+    "items": [
+      {
+        "label": "Create an Island Squad post",
+        "description": "Add a new game post to this community",
+        "location": "subreddit",
+        "forUserType": "moderator",
+        "endpoint": "/internal/menu/post-create"
+      },
+      {
+        "label": "Island Squad: remove player from leaderboards",
+        "description": "Remove a cheater or inappropriate username from the leaderboards",
+        "location": "subreddit",
+        "forUserType": "moderator",
+        "endpoint": "/internal/menu/remove-player"
+      },
+      {
+        "label": "Island Squad: reset all leaderboards",
+        "description": "Permanently delete every leaderboard score in this community",
+        "location": "subreddit",
+        "forUserType": "moderator",
+        "endpoint": "/internal/menu/reset-leaderboards"
+      }
+    ]
+  },
+  "forms": {
+    "removePlayerForm": "/internal/form/remove-player-submit",
+    "resetLeaderboardsForm": "/internal/form/reset-leaderboards-submit"
+  },
+  "triggers": {
+    "onAppInstall": "/internal/triggers/on-app-install"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch"
+  },
+  "payments": {
+    "productsFile": "./src/products.json",
+    "endpoints": {
+      "fulfillOrder": "/internal/payments/fulfill",
+      "refundOrder": "/internal/payments/refund"
+    }
+  },
+  "dev": {
+    "subreddit": "island_squad_dev"
+  }
+}
